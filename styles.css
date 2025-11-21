@@ -1,0 +1,79 @@
+.chess-assistant-sidebar {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 240px;
+  background: rgba(22, 27, 34, 0.95);
+  color: #ecf0f1;
+  z-index: 9999;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  border-radius: 8px;
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.chess-assistant-sidebar.collapsed {
+  transform: translateX(200px);
+}
+
+.chess-assistant-sidebar .ca-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background: #2c3e50;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.chess-assistant-sidebar .ca-title {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.chess-assistant-sidebar .ca-toggle {
+  background: transparent;
+  border: none;
+  color: #ecf0f1;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.chess-assistant-sidebar .ca-body {
+  padding: 10px 12px;
+}
+
+.chess-assistant-sidebar .ca-section {
+  margin-bottom: 12px;
+}
+
+.chess-assistant-sidebar .ca-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: 4px;
+}
+
+.ca-bestmove, .ca-eval {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.ca-depth {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.ca-blunder {
+  font-weight: 700;
+}
+
+.ca-arrow-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.ca-arrow-svg line {
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,0.35));
+}
